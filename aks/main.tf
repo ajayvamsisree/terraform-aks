@@ -10,6 +10,11 @@ terraform {
 provider "azurerm" {
   features {}
 }
+terraform{
+  backend "azurerm"{
+
+  }
+}
 
 resource "azurerm_resource_group" "rg" {
   name     = "k8sResourceGroup"
